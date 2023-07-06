@@ -1,0 +1,24 @@
+{
+    "workspace.library": [
+        "/home/gerry/.local/share/nvim/lazy/neodev.nvim/types/nightly",
+        "/usr/share/nvim/runtime/lua",
+        "/home/gerry/.local/share/nvim/lazy/nvim-web-devicons/lua",
+        "/home/gerry/.local/share/nvim/lazy/packer.nvim/lua",
+        "/home/gerry/.local/share/nvim/lazy/nvim-notify/lua",
+        "/home/gerry/.local/share/nvim/lazy/nvim/lua",
+        "/home/gerry/.local/share/nvim/lazy/popup.nvim/lua",
+        "/home/gerry/.local/share/nvim/lazy/nvim-lspconfig/lua",
+        "/home/gerry/.local/share/nvim/lazy/lazy.nvim/lua",
+        "/home/gerry/.local/share/nvim/lazy/nvim-treesitter/lua",
+        "/home/gerry/.local/share/nvim/lazy/nvim-treesitter-context/lua",
+        "/home/gerry/.local/share/nvim/lazy/telescope.nvim/lua",
+        "/home/gerry/.local/share/nvim/lazy/mason-tool-installer.nvim/lua",
+        "/home/gerry/.local/share/nvim/lazy/neodev.nvim/lua",
+        "/home/gerry/.local/share/nvim/lazy/mason-lspconfig.nvim/lua",
+        "/home/gerry/.local/share/nvim/lazy/plenary.nvim/lua",
+        "/home/gerry/.local/share/nvim/lazy/mason.nvim/lua",
+        "/home/gerry/.local/share/nvim/lazy/nvim-tree.lua/lua",
+        "/home/gerry/.config/nvim/lua",
+        "${3rd}/luv/library"
+    ]
+}
