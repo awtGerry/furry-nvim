@@ -10,6 +10,7 @@ return {
     "nvim-tree/nvim-tree.lua",
     "nvim-tree/nvim-web-devicons",
     "rcarriga/nvim-notify",
+
     -- Temas
     "catppuccin/nvim",
     "morhetz/gruvbox",

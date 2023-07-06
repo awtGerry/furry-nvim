@@ -13,3 +13,5 @@ a la tabla de servidores en `lua/furry/lsp/init.lua`
 # Configuracion
 ## Plugins
 Todas las configuraciones de plugins estan en `after/plugin`, menos lsp y telescope por ser mas complejas.
+
+# Referencias
