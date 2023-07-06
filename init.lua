@@ -1,4 +1,5 @@
-require "furry.first_open"
+-- require "impatient"
+vim.loader.enable()
 
 vim.g.mapleader = " " -- Espacio como mapleader
 

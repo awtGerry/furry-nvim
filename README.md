@@ -6,8 +6,8 @@ para cuando el cambio.
 Para instalar nuevos plugins en `lua/plugins/init.lua`
 
 # LSP
-La configuracion incluye un plugin que permite instalar los lenguajes con el comando
-``MasonInstall [nombre]``, si hay un lenguaje que no carga automaticamente se debe anadir
+Hay plugin que permite implementar nuevos lenguajes con el comando
+`:MasonInstall [nombre]`, si hay un lenguaje que no carga automaticamente se debe anadir
 a la tabla de servidores en `lua/furry/lsp/init.lua`
 
 # Configuracion

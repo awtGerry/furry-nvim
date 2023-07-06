@@ -28,7 +28,7 @@ function M.edit_neovim()
   local opts_with_preview, opts_without_preview
 
   opts_with_preview = {
-    prompt_title = "~ Neovim ~",
+    prompt_title = "~ Neovim files ~",
     shorten_path = false,
     follow = true,
     cwd = "~/.config/nvim",
