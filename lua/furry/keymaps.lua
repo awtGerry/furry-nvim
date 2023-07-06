@@ -20,7 +20,6 @@ map("<leader><leader>s", "source ~/.config/nvim/lua/furry/snips/init.lua")
 
 map("<leader>e", "NvimTreeToggle")
 
-map("<leader>f", "Telescope find_files")
 tele_maps("<leader>f", "fd")
 tele_maps("<leader><leader>n", "edit_neovim")
 

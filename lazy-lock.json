@@ -10,6 +10,7 @@
   "copilot-cmp": { "branch": "master", "commit": "c2cdb3c0f5078b0619055af192295830a7987790" },
   "copilot.lua": { "branch": "master", "commit": "e48bd7020a98be217d85c006a298656294fd6210" },
   "gruvbox": { "branch": "master", "commit": "bf2885a95efdad7bd5e4794dd0213917770d79b7" },
+  "harpoon": { "branch": "master", "commit": "21f4c47c6803d64ddb934a5b314dcb1b8e7365dc" },
   "lazy.nvim": { "branch": "main", "commit": "0d61488b89a570415177f75a36ef93616aac6c77" },
   "lspkind-nvim": { "branch": "master", "commit": "57610d5ab560c073c465d6faf0c19f200cb67e6e" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "4f1c72767bec31397d59554f84096909b2887195" },

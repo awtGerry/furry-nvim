@@ -14,4 +14,7 @@ return {
     -- Temas
     "catppuccin/nvim",
     "morhetz/gruvbox",
+
+    --[[ Otros ]]
+    "ThePrimeagen/harpoon",
 }

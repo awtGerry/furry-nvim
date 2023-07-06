@@ -1,21 +1,6 @@
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 vim.opt.shortmess:append "c"
 
--- Complextras.nvim configuration
-vim.api.nvim_set_keymap(
-  "i",
-  "<C-x><C-m>",
-  [[<c-r>=luaeval("require('complextras').complete_matching_line()")<CR>]],
-  { noremap = true }
-)
-
-vim.api.nvim_set_keymap(
-  "i",
-  "<C-x><C-d>",
-  [[<c-r>=luaeval("require('complextras').complete_line_from_cwd()")<CR>]],
-  { noremap = true }
-)
-
 local ok, lspkind = pcall(require, "lspkind")
 if not ok then
   return
@@ -23,7 +8,7 @@ end
 
 lspkind.init {
   symbol_map = {
-    Copilot = "",
+    Copilot = "",
   },
 }
 
@@ -68,29 +53,6 @@ cmp.setup {
 
     ["<tab>"] = cmp.config.disable,
 
-    -- -- Testing
-    -- ["<c-q>"] = cmp.mapping.confirm {
-    --   behavior = cmp.ConfirmBehavior.Replace,
-    --   select = false,
-    -- },
-
-    -- Completar con tabular
-    --  First you have to just promise to read `:help ins-completion`.
-    --
-    -- ["<Tab>"] = function(fallback)
-    --   if cmp.visible() then
-    --     cmp.select_next_item()
-    --   else
-    --     fallback()
-    --   end
-    -- end,
-    -- ["<S-Tab>"] = function(fallback)
-    --   if cmp.visible() then
-    --     cmp.select_prev_item()
-    --   else
-    --     fallback()
-    --   end
-    -- end,
   },
 
   sources = cmp.config.sources({
