@@ -1,6 +1,5 @@
 # Configuracion de neovim
-Intentando hacer una configuracion de neovim mas adecuada y accesible
-para cuando el cambio.
+Intentando hacer una configuracion de neovim adecuada, accesible y rapida.
 
 # Plugins
 Para instalar nuevos plugins en `lua/plugins/init.lua`

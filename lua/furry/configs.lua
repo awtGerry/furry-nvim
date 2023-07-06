@@ -51,10 +51,8 @@ opt.undofile = true
 opt.swapfile = false
 opt.backup = false
 
-opt.formatoptions = opt.formatoptions
-    - "a" -- Autoformat
-    - "t" -- Autoformat
-    + "c" -- Comentarios respetan anchura.
-    - "o" -- Dejar de comentar en nuevas lineas.
-    - "r" -- Dejar de comentar en nuevas lineas.
-    + "j" -- Quitar comentarios si es posible.
+vim.cmd [[
+    au BufWinEnter * set formatoptions-=c formatoptions-=r formatoptions-=o
+    au BufRead * set formatoptions-=c formatoptions-=r formatoptions-=o
+    au BufNewFile * set formatoptions-=c formatoptions-=r formatoptions-=o
+]]
