@@ -14,6 +14,8 @@ return {
     -- Temas
     "catppuccin/nvim",
     "morhetz/gruvbox",
+    "tjdevries/express_line.nvim",
+    { "j-hui/fidget.nvim", tag = "legacy" },
 
     --[[ Otros ]]
     "ThePrimeagen/harpoon",
