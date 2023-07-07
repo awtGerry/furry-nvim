@@ -1,5 +1,8 @@
-# Configuracion de neovim
-Intentando hacer una configuracion de neovim adecuada, accesible y rapida.
+<div align="center">
+    <h1><strong>Configuracion neovim</strong></h1>
+    <img title="screenshot" alt="system" src="./img.png">
+    <p>Intentando hacer una configuracion de neovim adecuada, accesible y rapida.</p>
+</div>
 
 # Plugins
 Para instalar nuevos plugins en `lua/packer/plugins/init.lua`

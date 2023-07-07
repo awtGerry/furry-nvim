@@ -31,7 +31,7 @@ local custom_attach = function(client)
 
     buf_key("n", "<space>ld", vim.diagnostic.goto_next, {buffer=0})
     buf_key("n", "<space>lp", vim.diagnostic.goto_prev, {buffer=0})
-    buf_key("n", "<space>D", vim.lsp.buf.type_definition, {buffer=0})
+    buf_key("n", "<space>lD", vim.lsp.buf.type_definition, {buffer=0})
 
     buf_key("n", "<space>ca", vim.lsp.buf.code_action, {buffer=0})
 
