@@ -2,7 +2,7 @@
 Intentando hacer una configuracion de neovim adecuada, accesible y rapida.
 
 # Plugins
-Para instalar nuevos plugins en `lua/plugins/init.lua`
+Para instalar nuevos plugins en `lua/packer/plugins/init.lua`
 
 # LSP
 Hay plugin que permite implementar nuevos lenguajes con el comando

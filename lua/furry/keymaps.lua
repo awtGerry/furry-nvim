@@ -20,6 +20,10 @@ map("<leader><leader>s", "source ~/.config/nvim/lua/furry/snips/init.lua")
 
 map("<leader>e", "NvimTreeToggle")
 
+tele_maps("<leader>fc", "colorscheme")
+map("<leader>cg", "lua require('after.plugin.colorscheme').awesome_colors('gruvbox')")
+map("<leader>cc", "lua require('after.plugin.colorscheme').awesome_colors('catppuccin')")
+
 tele_maps("<leader>fd", "fd")
 tele_maps("<leader>fb", "buffers")
 tele_maps("<leader>fs", "live_grep")

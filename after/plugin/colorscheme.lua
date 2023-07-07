@@ -1,9 +1,10 @@
 local g = vim.g
 local opt = vim.opt
 local hl = vim.api.nvim_set_hl
+
 local M = {}
 
-function M.change_colors(color)
+function M.awesome_colors(color)
     opt.termguicolors = true
 
     g.gruvbox_contrast_dark = "hard"
@@ -25,7 +26,7 @@ function M.change_colors(color)
     vim.cmd.colorscheme(color)
 end
 
-M.change_colors("catppuccin")
--- M.change_colors("gruvbox")
+-- M.awesome_colors("catppuccin")
+-- M.awesome_colors("gruvbox")
 
 return M

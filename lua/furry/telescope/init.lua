@@ -215,6 +215,10 @@ function M.buffers()
   }
 end
 
+function M.colorscheme()
+    require("telescope.builtin").colorscheme {}
+end
+
 function M.all_files()
   tele_find {
     find_command = { "rg", "--no-ignore", "--files" },
