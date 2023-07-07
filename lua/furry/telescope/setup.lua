@@ -1,3 +1,7 @@
+if not pcall(require, "telescope") then
+  return
+end
+
 local actions = require "telescope.actions"
 local action_state = require "telescope.actions.state"
 
@@ -118,5 +122,9 @@ require('telescope').setup {
       trace_entry = true,
       reset_selection = true,
     },
+    ["ui-select"] = {
+      require("telescope.themes").get_dropdown {},
+    },
   },
+    _ = require("telescope").load_extension "ui-select"
 }

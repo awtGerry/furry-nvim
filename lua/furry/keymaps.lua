@@ -20,8 +20,10 @@ map("<leader><leader>s", "source ~/.config/nvim/lua/furry/snips/init.lua")
 
 map("<leader>e", "NvimTreeToggle")
 
-tele_maps("<leader>f", "fd")
-tele_maps("<leader><leader>n", "edit_neovim")
+tele_maps("<leader>fd", "fd")
+tele_maps("<leader>fb", "buffers")
+tele_maps("<leader>fs", "live_grep")
+tele_maps("<leader>fn", "edit_neovim")
 
 -- Harpoon
 map("<leader><leader>a", "lua require('harpoon.mark').add_file()")

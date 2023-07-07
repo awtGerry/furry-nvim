@@ -22,9 +22,6 @@ function M.change_colors(color)
         },
     })
 
-    -- vim.cmd [[ hi StatusLine ctermbg="#ff0000" ctermfg="#ff0000" ]]
-
-    vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = "#ff0000" })
     vim.cmd.colorscheme(color)
 end
 

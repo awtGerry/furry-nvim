@@ -19,7 +19,12 @@ local tree = require("nvim-treesitter.configs").setup {
         "typescript",
         "vim"
     },
+
     highlight = {
+        enable = true,
+    },
+
+    autotag = {
         enable = true,
     }
 }

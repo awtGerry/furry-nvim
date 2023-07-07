@@ -15,6 +15,8 @@ if not lspconfig then
     return
 end
 
+local tele_maps = require("furry.telescope.telemaps")
+
 local buf_key = vim.keymap.set
 local custom_attach = function(client)
     if client.name == "copilot" then
@@ -26,22 +28,23 @@ local custom_attach = function(client)
     buf_key("n", "gD", vim.lsp.buf.declaration, {buffer=0})
     buf_key("n", "gt", vim.lsp.buf.type_definition, {buffer=0})
     buf_key("n", "gi", vim.lsp.buf.implementation, {buffer=0})
-    buf_key("n", "<space>dn", vim.diagnostic.goto_next, {buffer=0})
-    buf_key("n", "<space>dp", vim.diagnostic.goto_prev, {buffer=0})
+
+    buf_key("n", "<space>ld", vim.diagnostic.goto_next, {buffer=0})
+    buf_key("n", "<space>lp", vim.diagnostic.goto_prev, {buffer=0})
     buf_key("n", "<space>D", vim.lsp.buf.type_definition, {buffer=0})
+
+    buf_key("n", "<space>ca", vim.lsp.buf.code_action, {buffer=0})
 
     buf_key("n", "<space>r", vim.lsp.buf.rename, {buffer=0})
 
-    buf_key("n", "<space>lR", "LspRestart")
-    buf_key("n", "<space>lf", "Telescope lsp_references")
-    buf_key("n", "<space>li", "Telescope lsp_implementations")
+    buf_key("n", "<space>lr", "<cmd>LspRestart<cr>")
+    tele_maps("<space>lf", "lsp_references")
+    tele_maps("<space>ll", "lsp_implementations")
+    tele_maps("<space>ls", "lsp_document_symbols", { ignore_filename = true }, true)
+    tele_maps("<space>lw", "lsp_dynamic_workspace_symbols", { ignore_filename = true }, true)
 
     vim.bo.omnifunc = "v:lua.vim.lsp.omnifunc"
 
-
-  if filetype == "typescript" or filetype == "lua" then
-    client.server_capabilities.semanticTokensProvider = nil
-  end
 end
 
 -- local updated_capabilities = vim.lsp.protocol.make_client_capabilities()

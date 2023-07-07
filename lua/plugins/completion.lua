@@ -6,4 +6,9 @@ return {
     "hrsh7th/cmp-nvim-lua",
     "hrsh7th/nvim-cmp",
     "saadparwaiz1/cmp_luasnip",
+
+    -- Cerrar automaticamente parentesis, comillas, etc
+    { "windwp/nvim-autopairs", event = "InsertEnter", opts = {} },
+    "windwp/nvim-ts-autotag",
+
 }
