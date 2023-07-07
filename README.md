@@ -1,6 +1,7 @@
 <div align="center">
     <h1><strong>Configuracion neovim</strong></h1>
-    <img title="screenshot" alt="system" src="./img.png">
+    <img title="screenshot" alt="system" src="./public/neovim.png">
+    <img title="screenshot" alt="system" src="./public/rs_example.png">
     <p>Intentando hacer una configuracion de neovim adecuada, accesible y rapida.</p>
 </div>
 
