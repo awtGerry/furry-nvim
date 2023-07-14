@@ -10,6 +10,7 @@ return {
 
     --[[ Temas ]]
     "catppuccin/nvim",
+    "projekt0n/github-nvim-theme",
     "morhetz/gruvbox",
 
     -- Barra
@@ -17,6 +18,7 @@ return {
     { "j-hui/fidget.nvim", tag = "legacy" },
 
     "goolord/alpha-nvim",
+
     {
         "karb94/neoscroll.nvim",
         config = function()
@@ -36,4 +38,5 @@ return {
 
     --[[ Otros ]]
     "ThePrimeagen/harpoon",
+    "mbbill/undotree",
 }

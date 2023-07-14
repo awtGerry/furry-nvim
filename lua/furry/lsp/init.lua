@@ -61,7 +61,16 @@ local servers = {
     svelte = true,
     tailwindcss = true,
     texlab = true,
-    tsserver = true,
+    tsserver = {
+        filetypes = {
+            "javascript",
+            "javascriptreact",
+            "javascript.jsx",
+            "typescript",
+            "typescriptreact",
+            "typescript.tsx"
+        },
+    },
 }
 
 local setup_servers = function(server, config)

@@ -19,6 +19,8 @@ map("<leader>y", "%y+")
 map("<leader><leader>s", "source ~/.config/nvim/lua/furry/snips/init.lua")
 
 map("<leader>e", "NvimTreeToggle")
+map("<leader>u", "UndotreeToggle")
+map("<leader>t", "TroubleToggle")
 
 tele_maps("<leader>fc", "colorscheme")
 map("<leader>cg", "lua require('after.plugin.colorscheme').awesome_colors('gruvbox')")
