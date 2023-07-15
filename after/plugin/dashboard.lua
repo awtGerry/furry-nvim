@@ -52,7 +52,8 @@ dashboard.section.buttons.val = {
   dashboard.button("f", "  Buscar archivos", "<cmd>Telescope find_files<cr>"),
   dashboard.button("s", "󰊄  Buscar texto", "<cmd>Telescope live_grep<cr>"),
   dashboard.button("e", "  Explorador de archivos", "<cmd>NvimTreeOpen<cr>"),
-  dashboard.button("c", "  Configuracion", ":e $MYVIMRC<cr>"),
+  dashboard.button("c", "  Configuracion", "<cmd>e $MYVIMRC<cr>"),
+  -- dashboard.button("d", "󰆼  Bases de datos", "<cmd>DBUI<cr>"),
   dashboard.button("q", "󰩈  Salir de neovim", "<cmd>quit<cr>"),
 }
 
