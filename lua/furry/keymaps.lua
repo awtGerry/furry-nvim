@@ -21,13 +21,14 @@ map("<leader><leader>s", "source ~/.config/nvim/lua/furry/snips/init.lua")
 map("<leader>e", "NvimTreeToggle")
 map("<leader>u", "UndotreeToggle")
 map("<leader>t", "TroubleToggle")
+map("<leader>d", "DBUIToggle")
 
 tele_maps("<leader>fc", "colorscheme")
 map("<leader>cg", "lua require('after.plugin.colorscheme').awesome_colors('gruvbox')")
 map("<leader>cc", "lua require('after.plugin.colorscheme').awesome_colors('catppuccin')")
 
 tele_maps("<leader>fd", "fd")
-tele_maps("<leader>fb", "buffers")
+tele_maps("<leader><leader>b", "buffers")
 tele_maps("<leader>fs", "live_grep")
 tele_maps("<leader>fn", "edit_neovim")
 
@@ -43,3 +44,12 @@ map("<leader>6", "lua require('harpoon.ui').nav_file(6)")
 map("<leader>7", "lua require('harpoon.ui').nav_file(7)")
 map("<leader>8", "lua require('harpoon.ui').nav_file(8)")
 map("<leader>9", "lua require('harpoon.ui').nav_file(9)")
+
+-- Movimiento entre ventanas
+keymap('n', '<C-h>', '<C-w>h', {silent = true})
+keymap('n', '<C-j>', '<C-w>j', {silent = true})
+keymap('n', '<C-k>', '<C-w>k', {silent = true})
+keymap('n', '<C-l>', '<C-w>l', {silent = true})
+-- Mover texto
+keymap('v', '<', '<gv', {noremap = true, silent = true})
+keymap('v', '>', '>gv', {noremap = true, silent = true})
