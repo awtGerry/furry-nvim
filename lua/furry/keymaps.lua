@@ -33,6 +33,8 @@ tele_maps("<leader>fd", "fd")
 tele_maps("<leader><leader>b", "buffers")
 tele_maps("<leader>fs", "live_grep")
 tele_maps("<leader>fn", "edit_neovim")
+tele_maps("<leader>p", "projects")
+tele_maps("<leader>wa", "walls")
 
 -- Harpoon
 map("<leader><leader>a", "lua require('harpoon.mark').add_file()")

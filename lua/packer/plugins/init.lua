@@ -11,7 +11,8 @@ return {
     --[[ Temas ]]
     "catppuccin/nvim",
     "projekt0n/github-nvim-theme",
-    "morhetz/gruvbox",
+    -- "morhetz/gruvbox",
+    "ellisonleao/gruvbox.nvim", -- Testing lua gruvbox
 
     -- Barra
     "tjdevries/express_line.nvim",

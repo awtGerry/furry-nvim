@@ -84,13 +84,19 @@ function M.projects()
     tele_find {
         shorten_path = false,
         cwd = "~/projects/",
-        prompt = "~ VS* sucks ~",
+        prompt = "~ life sucks ~",
         hidden = true,
 
         layout_strategy = "horizontal",
         layout_config = {
             preview_width = 0.55,
         },
+        file_ignore_patterns = {
+            ".git/.*",
+            "node%_modules/.*",
+            "target/.*",
+            "icons/.*",
+        }
     }
 end
 
