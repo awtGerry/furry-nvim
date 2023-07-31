@@ -24,5 +24,5 @@ vim.g.db_ui_icons = {
     new_query = '󰆺',
     saved_query = '󰈮',
     tables = '~',
-    buffers = '>﬘',
+    buffers = '>',
 }
