@@ -1,7 +1,5 @@
 vim.loader.enable()
-
 vim.g.mapleader = " " -- Espacio como mapleader
-
 package.path = os.getenv("HOME") .. "/.config/nvim/" .. package.path
 
 -- Manejar plugins automaticamente con lazy.nvim
@@ -36,9 +34,10 @@ require("lazy").setup("packer.plugins", {
     },
 })
 
--- require ("after.plugin.colorscheme").awesome_colors("catppuccin")
-require ("after.plugin.colorscheme").awesome_colors("gruvbox")
+require ("after.plugin.colorscheme").awesome_colors("catppuccin")
+-- require ("after.plugin.colorscheme").awesome_colors("gruvbox")
 
+require "furry.options"
 require "furry.configs"
 require "furry.keymaps"
 require "furry.lsp"

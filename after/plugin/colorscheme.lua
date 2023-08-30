@@ -12,7 +12,7 @@ function M.awesome_colors(color)
 
     require("catppuccin").setup({
         flavour = "mocha",
-        transparent_background = false, -- true para fondo transparente (necesita compositor)
+        transparent_background = true, -- true para fondo transparente (necesita compositor)
         integrations = {
             cmp = true,
             gitsigns = true,

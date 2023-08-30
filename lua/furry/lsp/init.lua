@@ -61,6 +61,7 @@ local servers = {
     svelte = true,
     tailwindcss = true,
     texlab = true,
+    pyright = true,
     tsserver = {
         filetypes = {
             "javascript",
