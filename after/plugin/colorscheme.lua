@@ -12,7 +12,7 @@ function M.awesome_colors(color)
 
     require("catppuccin").setup({
         flavour = "mocha",
-        transparent_background = true, -- true para fondo transparente (necesita compositor)
+        transparent_background = false, -- true para fondo transparente (necesita compositor)
         integrations = {
             cmp = true,
             gitsigns = true,
@@ -47,9 +47,25 @@ function M.awesome_colors(color)
       dim_inactive = false,
       transparent_mode = false,
     })
-
     vim.cmd.colorscheme(color)
 end
+
+vim.api.nvim_create_autocmd('ColorScheme', {
+  callback = function()
+    local highlights = {
+      'Normal',
+      'LineNr',
+      'Folded',
+      'NonText',
+      'SpecialKey',
+      'VertSplit',
+      'SignColumn',
+      'EndOfBuffer',
+      'TablineFill', -- this is specific to how I like my tabline to look like
+    }
+    for _, name in pairs(highlights) do vim.cmd.highlight(name .. ' guibg=none ctermbg=none') end 
+end, 
+})
 
 -- M.awesome_colors("catppuccin")
 -- M.awesome_colors("gruvbox")

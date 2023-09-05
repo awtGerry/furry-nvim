@@ -8,7 +8,7 @@ return {
     { "saadparwaiz1/cmp_luasnip", dependencies = { "L3MON4D3/LuaSnip" } },
 
     -- Cerrar automaticamente parentesis, comillas, etc
-    { "windwp/nvim-autopairs", event = "InsertEnter", opts = {} },
+    -- { "windwp/nvim-autopairs", event = "InsertEnter", opts = {} },
     "windwp/nvim-ts-autotag",
 
 }
