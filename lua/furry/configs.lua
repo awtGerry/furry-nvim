@@ -14,8 +14,8 @@ opt.hidden = true -- Deja los buffers siempre abiertos (+ RAM)
 opt.clipboard = "unnamedplus" -- Comparte el clipboard de vim con el del sistema
 opt.shortmess = opt.shortmess + "c" -- Quita unos mensajes de error
 
-opt.mouse = "nvi" -- Habilita el mouse
--- opt.mouse = "" -- Desabilita el mouse
+-- opt.mouse = "nvi" -- Habilita el mouse
+opt.mouse = "" -- Desabilita el mouse
 
 -- Busqueda
 opt.incsearch = true -- Mientras se escribe se van mostrando resultados

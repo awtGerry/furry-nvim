@@ -12,6 +12,7 @@ return {
     "catppuccin/nvim",
     "projekt0n/github-nvim-theme",
     "ellisonleao/gruvbox.nvim",
+    "folke/tokyonight.nvim",
 
     -- Barra
     "tjdevries/express_line.nvim",

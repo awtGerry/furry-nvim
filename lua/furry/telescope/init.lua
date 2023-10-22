@@ -19,6 +19,12 @@ function M.fd()
   local opts = themes.get_ivy {
       hidden = false,
       follow = true,
+      file_ignore_patterns = {
+          ".git/.*",
+          "node%_modules/.*",
+          "target/.*",
+          "icons/.*",
+      }
   }
   require("telescope.builtin").fd(opts)
 end
