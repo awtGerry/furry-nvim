@@ -57,6 +57,7 @@ local servers = {
     gopls = true,
     html = true,
     lua_ls = true,
+    dartls = true,
     rust_analyzer = true,
     svelte = true,
     tailwindcss = true,

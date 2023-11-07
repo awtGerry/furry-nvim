@@ -80,5 +80,6 @@ require("fidget").setup {
     },
     window = {
         relative = "editor",
+        winblend = 0,
     },
 }

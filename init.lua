@@ -34,9 +34,7 @@ require("lazy").setup("packer.plugins", {
     },
 })
 
-require ("after.plugin.colorscheme").awesome_colors("tokyonight")
--- require ("after.plugin.colorscheme").awesome_colors("catppuccin")
--- require ("after.plugin.colorscheme").awesome_colors("gruvbox")
+require ("after.plugin.colorscheme").awesome_colors("rose-pine")
 
 require "furry.options"
 require "furry.configs"

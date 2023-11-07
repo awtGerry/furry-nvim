@@ -9,10 +9,13 @@ return {
     "rcarriga/nvim-notify",
 
     --[[ Temas ]]
-    "catppuccin/nvim",
-    "projekt0n/github-nvim-theme",
     "ellisonleao/gruvbox.nvim",
-    "folke/tokyonight.nvim",
+	{ "rose-pine/neovim",
+	  as = 'rose-pine',
+	  config = function()
+		  vim.cmd[[colorscheme rose-pine]]
+	  end
+    },
 
     -- Barra
     "tjdevries/express_line.nvim",
