@@ -53,4 +53,6 @@ function M.awesome_colors(color)
 
 end
 
+M.awesome_colors("rose-pine")
+
 return M
