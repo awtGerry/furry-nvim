@@ -25,20 +25,16 @@ local _ = require("nvim-treesitter.configs").setup {
         enable = true,
     },
 
-    autotag = {
-        enable = true,
-    },
-
-  refactor = {
-    highlight_definitions = { enable = true },
-    highlight_current_scope = { enable = false },
+    refactor = {
+        highlight_definitions = { enable = true },
+        highlight_current_scope = { enable = false },
 
     smart_rename = {
-      enable = false,
-      keymaps = {
-        -- mapping to rename reference under cursor
-        smart_rename = "grr",
-      },
+        enable = false,
+        keymaps = {
+            -- mapping to rename reference under cursor
+            smart_rename = "grr",
+        },
     },
 
     navigation = {
