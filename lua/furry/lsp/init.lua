@@ -63,6 +63,7 @@ local servers = {
     tailwindcss = true,
     texlab = true,
     pyright = true,
+    rnix = true,
     tsserver = {
         filetypes = {
             "javascript",

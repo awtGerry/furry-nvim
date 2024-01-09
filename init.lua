@@ -16,6 +16,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Cambiar idioma a español
+vim.opt.langmenu = "es_ES.UTF-8"
+
 require("lazy").setup("packer.plugins", {
     ui = {
         icons = {

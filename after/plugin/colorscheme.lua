@@ -18,9 +18,10 @@ function M.awesome_colors(color)
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
     vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
 
-    -- require("rose-pine").setup({
-    --     disable_background = true,
-    -- })
+    require("rose-pine").setup({
+        -- disable_background = true,
+        -- variant = "dawn",
+    })
     --
     -- vim.cmd[[
     --     hi! FidgetTitle ctermbg=NONE guibg=NONE
@@ -41,7 +42,7 @@ function M.awesome_colors(color)
       },
       invert_selection = false,
       inverse = true, -- invert background for search, diffs, statuslines and errors
-      contrast = "", -- can be "hard", "soft" or empty string
+      contrast = "hard", -- can be "hard", "soft" or empty string
       transparent_mode = false,
     })
 
@@ -54,5 +55,6 @@ function M.awesome_colors(color)
 end
 
 M.awesome_colors("rose-pine")
+-- M.awesome_colors("gruvbox")
 
 return M
