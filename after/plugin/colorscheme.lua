@@ -19,7 +19,7 @@ function M.awesome_colors(color)
     vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
 
     require("rose-pine").setup({
-        -- disable_background = true,
+        disable_background = true,
         -- variant = "dawn",
     })
     --
