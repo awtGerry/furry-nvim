@@ -5,9 +5,9 @@ return {
     "folke/trouble.nvim",
 
     -- For mason install
-    --[[
+    
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "WhoIsSethDaniel/mason-tool-installer.nvim",
-    ]]
+   
 }

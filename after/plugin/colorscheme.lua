@@ -54,7 +54,7 @@ function M.awesome_colors(color)
 
 end
 
-M.awesome_colors("rose-pine")
--- M.awesome_colors("gruvbox")
+-- M.awesome_colors("rose-pine")
+M.awesome_colors("gruvbox")
 
 return M

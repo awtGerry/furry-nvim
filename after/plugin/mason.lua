@@ -1,4 +1,4 @@
---[[ local servers = require("furry.lsp")
+local servers = require("furry.lsp")
 require("mason").setup()
 
 require('mason-lspconfig').setup({
@@ -15,4 +15,4 @@ require('mason-lspconfig').setup({
         "texlab",
         "tsserver",
     }
-}) ]]
+})

@@ -74,6 +74,8 @@ local servers = {
             "typescript.tsx"
         },
     },
+    matlab_ls = true,
+    jdtls = true,
 }
 
 local setup_servers = function(server, config)
