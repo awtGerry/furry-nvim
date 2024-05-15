@@ -47,8 +47,21 @@ local custom_attach = function(client)
 
 end
 
+local custom_init = function(client)
+  client.config.flags = client.config.flags or {}
+  client.config.flags.allow_incremental_sync = true
+end
+
 -- local updated_capabilities = vim.lsp.protocol.make_client_capabilities()
-local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
+local updated_capabilities = vim.lsp.protocol.make_client_capabilities()
+updated_capabilities.textDocument.completion.completionItem.snippetSupport = true
+updated_capabilities.workspace.didChangeWatchedFiles.dynamicRegistration = false
+
+-- Completion configuration
+vim.tbl_deep_extend("force", updated_capabilities, require("cmp_nvim_lsp").default_capabilities())
+updated_capabilities.textDocument.completion.completionItem.insertReplaceSupport = false
+
+updated_capabilities.textDocument.codeLens = { dynamicRegistration = false }
 
 local servers = {
     bashls = true,
@@ -90,7 +103,7 @@ local setup_servers = function(server, config)
     config = vim.tbl_deep_extend("force", {
         on_init = custom_init,
         on_attach = custom_attach,
-        capabilities = capabilities,
+        capabilities = updated_capabilities,
     }, config)
 
     lspconfig[server].setup(config)

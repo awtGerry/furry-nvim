@@ -2,6 +2,8 @@ vim.loader.enable()
 vim.g.mapleader = " " -- Espacio como mapleader
 package.path = os.getenv("HOME") .. "/.config/nvim/" .. package.path
 
+require "furry.globals"
+
 -- Manejar plugins automaticamente con lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -36,7 +38,6 @@ require("lazy").setup("packer.plugins", {
         },
     },
 })
-
 require "furry.options"
 require "furry.configs"
 require "furry.keymaps"

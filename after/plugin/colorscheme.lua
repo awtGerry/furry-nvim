@@ -12,14 +12,13 @@ function M.awesome_colors(color)
 
     color = color or "rose-pine"
 
-    -- vim.cmd.colorscheme(color)
-
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
     vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
 
     require("rose-pine").setup({
-        disable_background = true,
+        -- disable_background = true,
+        variant = "pine",
         -- variant = "dawn",
     })
     --
@@ -54,7 +53,7 @@ function M.awesome_colors(color)
 
 end
 
--- M.awesome_colors("rose-pine")
-M.awesome_colors("gruvbox")
+M.awesome_colors("rose-pine")
+-- M.awesome_colors("gruvbox")
 
 return M
