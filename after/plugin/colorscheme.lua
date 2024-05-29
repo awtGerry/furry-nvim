@@ -12,20 +12,19 @@ function M.awesome_colors(color)
 
     color = color or "rose-pine"
 
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+	hl(0, "Normal", { bg = "none" })
+	hl(0, "NormalFloat", { bg = "none" })
+    hl(0, "NormalNC", { bg = "none" })
 
     require("rose-pine").setup({
-        -- disable_background = true,
-        variant = "pine",
-        -- variant = "dawn",
+        disable_background = false,
+        variant = "dawn",
     })
-    --
-    -- vim.cmd[[
-    --     hi! FidgetTitle ctermbg=NONE guibg=NONE
-    --     hi! FidgetTask ctermbg=NONE guibg=NONE
-    -- ]]
+
+    vim.cmd[[
+        hi! FidgetTitle ctermbg=NONE guibg=NONE
+        hi! FidgetTask ctermbg=NONE guibg=NONE
+    ]]
 
     -- Default options:
     require("gruvbox").setup({
@@ -47,13 +46,14 @@ function M.awesome_colors(color)
 
     vim.cmd.colorscheme(color)
 
-    vim.api.nvim_set_hl(0,"TelescopeNormal",{bg="none"})
-    vim.api.nvim_set_hl(0,"TelescopeBorder",{bg="none"})
-    vim.api.nvim_set_hl(0,"TelescopePromptNormal",{bg="none"})
+    hl(0,"TelescopeNormal",{bg="none"})
+    hl(0,"TelescopeBorder",{bg="none"})
+    hl(0,"TelescopePromptNormal",{bg="none"})
 
 end
 
-M.awesome_colors("rose-pine")
+M.awesome_colors("catppuccin")
+-- M.awesome_colors("rose-pine")
 -- M.awesome_colors("gruvbox")
 
 return M

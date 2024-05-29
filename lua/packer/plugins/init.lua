@@ -10,6 +10,7 @@ return {
 
     --[[ Temas ]]
     "ellisonleao/gruvbox.nvim",
+    { "catppuccin/nvim", name = "catppuccin" },
 	{ "rose-pine/neovim",
 	  as = 'rose-pine',
 	  config = function()
