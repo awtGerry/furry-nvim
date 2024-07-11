@@ -18,7 +18,7 @@ function M.awesome_colors(color)
 
     require("rose-pine").setup({
         disable_background = false,
-        variant = "dawn",
+        -- variant = "dawn",
     })
 
     vim.cmd[[
@@ -52,8 +52,8 @@ function M.awesome_colors(color)
 
 end
 
-M.awesome_colors("catppuccin")
--- M.awesome_colors("rose-pine")
+-- M.awesome_colors("catppuccin")
+M.awesome_colors("rose-pine")
 -- M.awesome_colors("gruvbox")
 
 return M

@@ -20,8 +20,6 @@ return {
 
     -- Barra
     "tjdevries/express_line.nvim",
-    { "j-hui/fidget.nvim", tag = "legacy" },
-
     "goolord/alpha-nvim",
 
     {

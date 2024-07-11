@@ -72,6 +72,7 @@ local servers = {
     lua_ls = true,
     dartls = true,
     rust_analyzer = true,
+    gleam = true,
     svelte = true,
     tailwindcss = true,
     texlab = true,
