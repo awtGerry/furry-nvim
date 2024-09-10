@@ -8,16 +8,6 @@ return {
     "nvim-tree/nvim-web-devicons",
     "rcarriga/nvim-notify",
 
-    --[[ Temas ]]
-    "ellisonleao/gruvbox.nvim",
-    { "catppuccin/nvim", name = "catppuccin" },
-	{ "rose-pine/neovim",
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd[[colorscheme rose-pine]]
-	  end
-    },
-
     -- Barra
     "tjdevries/express_line.nvim",
     "goolord/alpha-nvim",
@@ -43,8 +33,14 @@ return {
     "ThePrimeagen/harpoon",
     "mbbill/undotree",
     {
-        "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end,
+        "toppair/peek.nvim",
+        event = { "VeryLazy" },
+        build = "deno task --quiet build:fast",
+        config = function()
+            require("peek").setup()
+            vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
+            vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
+        end,
     },
     "lervag/vimtex",
 }

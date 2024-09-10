@@ -32,7 +32,7 @@ opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4
 vim.cmd [[
-    autocmd BufRead,BufNewFile *.html,*.js,*.ts,*.svelte,*.tsx,*.css,*.php,*.nix setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufRead,BufNewFile *.html,*md,*.js,*.ts,*.svelte,*.tsx,*.css,*.php,*.json,*.nix,*.gleam setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd BufRead,BufNewFile *.php set autoindent
 ]]
 opt.smartindent = true -- Tab iniciando nueva linea

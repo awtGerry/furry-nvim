@@ -5,7 +5,14 @@ local ok, lspkind = pcall(require, "lspkind")
 if not ok then
   return
 end
-lspkind.init()
+
+-- Copilot setup
+lspkind.init({
+  symbol_map = {
+    Copilot = "",
+  },
+})
+vim.api.nvim_set_hl(0, "CmpItemKindCopilot", {fg ="#f6c177"})
 
 local cmp = require "cmp"
 
@@ -56,6 +63,7 @@ cmp.setup {
     { name = "luasnip" },
     { name = "path" },
     { name = "buffer", keyword_length = 4 },
+    { name = "copilot", group_index = 2 },
   }),
 
   sorting = {
@@ -91,6 +99,8 @@ cmp.setup {
 
   formatting = {
     format = lspkind.cmp_format {
+      mode = "symbol",
+      max_width = 50,
       with_text = true,
       menu = {
         buffer = "[buf]",
@@ -101,10 +111,10 @@ cmp.setup {
         gh_issues = "[issues]",
         tn = "[TabNine]",
         eruby = "[erb]",
+        copilot = "[ai]",
       },
     },
   },
-
   experimental = {
     native_menu = false,
     ghost_text = false,

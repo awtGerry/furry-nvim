@@ -20,7 +20,9 @@ map("<leader>y", "%y+")
 
 map("<leader>e", "NvimTreeToggle")
 map("<leader>u", "UndotreeToggle")
-map("<leader>t", "TroubleToggle")
+map("<leader>t", "Trouble diagnostics")
+map("<leader>md", "PeekOpen")
+
 
 map("<leader>d", "DBUIToggle")
 map("<leader><leader>d", "tab DBUI")

@@ -15,13 +15,24 @@ local _ = require("nvim-treesitter.configs").setup {
         "json",
         "lua",
         "markdown",
+        "query",
         "rust",
         "tsx",
         "typescript",
-        "vim"
+        "vim",
+        "vimdoc"
     },
 
+    ignore_install = {},
+    modules = {},
+    auto_install = true,
+    sync_install = false,
+
     highlight = {
+        enable = true,
+    },
+
+    indent = {
         enable = true,
     },
 
@@ -144,3 +155,6 @@ local _ = require("nvim-treesitter.configs").setup {
 require("treesitter-context").setup {
     enable = false
 }
+
+require("tree-sitter-rstml").setup()
+require("nvim-ts-autotag").setup()
